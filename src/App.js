@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Navbar from './components/Navbar/Navbar';
+
+class App extends Component {
 
 
-function App() {
-  return (
-    <div className="App">
-    <h1>React Sidebar Left</h1>
-    </div>
-  );
+  render() {
+    return (
+      <div>
+        <Navbar/>
+        <main>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, distinctio.</p>
+        </main>
+      </div>
+    )
+  }
 }
 
 export default App;
