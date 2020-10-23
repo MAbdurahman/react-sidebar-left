@@ -1,12 +1,15 @@
 import React from 'react';
 import './Navbar.css';
+import NavbarButton from '../NavbarButton/NavbarButton';
 
 const Navbar = props => {
    return (
       <>
          <header className="navbar">
             <nav className="navbar__navigation">
-               <div />
+               <div>
+                  <NavbarButton/>
+               </div>
                <div className="navbar__logo">
                   <a href="/">Brand Logo</a>
                </div>
@@ -14,14 +17,20 @@ const Navbar = props => {
                <div className="navbar__navigation--container">
                   <ul className="navbar__navigation--list">
                      <li className="navbar__navigation--items">
-                        <a href="/">Home</a>
+                        <a className="navbar__navigation--link" href="/">Home</a>
                      </li>
                      <li className="navbar__navigation--items">
-                        <a href="/">About</a>
+                        <a className="navbar__navigation--link" href="/">About</a>
                      </li>
-                     <li className="navbar__navigation--items"><a href="/">Skills</a></li>
-                     <li className="navbar__navigation--items"><a href="/">Portfolio</a></li>
-                     <li className="navbar__navigation--items"><a href="/">Contact</a></li>
+                     <li className="navbar__navigation--items">
+                        <a className="navbar__navigation--link" href="/">Skills</a>
+                        </li>
+                     <li className="navbar__navigation--items">
+                        <a className="navbar__navigation--link" href="/">Portfolio</a>
+                        </li>
+                     <li className="navbar__navigation--items">
+                        <a className="navbar__navigation--link" href="/">Contact</a>
+                        </li>
                   </ul>
                </div>
             </nav>

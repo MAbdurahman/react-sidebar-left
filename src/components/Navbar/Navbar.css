@@ -19,10 +19,11 @@
 .navbar__logo {
    display: flex;
    align-items: center;
+   margin-left: .3em;
 }
 
 .navbar__logo a {
-   margin-left: 1.5em;
+   margin-left: .5em;
    color: #EDEBD7;
    font-family: monospace;
    font-size: 2rem;
@@ -92,6 +93,20 @@
    -ms-transform: scale(1.5);
    -o-transform: scale(1.5);
 }
+
 .navbar__navigation--items>a.active {
    color: #f5ae0a;
+}
+.navbar__navigation--link {
+   width: 100%;
+}
+
+.navbar__navigation--link:hover,
+.navbar__navigation--link:focus {
+   color: #EBC670;
+   transform: scale(1.5);
+   -webkit-transform: scale(1.5);
+   -moz-transform: scale(1.5);
+   -ms-transform: scale(1.5);
+   -o-transform: scale(1.5);
 }
