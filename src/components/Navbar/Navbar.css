@@ -2,7 +2,8 @@
    position: fixed;
    top: 0;
    left: 0;
-   width: 100%;
+   z-index: 90;
+   width: 100vw;
    height: 60px;
    background-color: #423E37;
 
@@ -71,42 +72,42 @@
 .navbar__navigation--items {
    padding: 0 0.667em;
    align-self: center;
-
+   transition: all .33s cubic-bezier(0.075, 0.82, 0.165, 1);
+   -webkit-transition: all .33s cubic-bezier(0.075, 0.82, 0.165, 1);
+   -moz-transition: all .33s cubic-bezier(0.075, 0.82, 0.165, 1);
+   -ms-transition: all .33s cubic-bezier(0.075, 0.82, 0.165, 1);
+   -o-transition: all .33s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.navbar__navigation--items a {
-   font-size: 1.1rem;
-   letter-spacing: 2px;
-   transition: all .33s ease-in-out;
-   -webkit-transition: all .33s ease-in-out;
-   -moz-transition: all .33s ease-in-out;
-   -ms-transition: all .33s ease-in-out;
-   -o-transition: all .33s ease-in-out;
-}
 
-.navbar__navigation--items>a:focus,
-.navbar__navigation--items>a:hover {
-   color: #EBC670;
-   transform: scale(1.5);
-   -webkit-transform: scale(1.5);
-   -moz-transform: scale(1.5);
-   -ms-transform: scale(1.5);
-   -o-transform: scale(1.5);
-}
-
-.navbar__navigation--items>a.active {
-   color: #f5ae0a;
-}
 .navbar__navigation--link {
    width: 100%;
+   font-size: 1.1rem;
+   letter-spacing: 2px;
+   transition: all .33s cubic-bezier(0.075, 0.82, 0.165, 1);
+   -webkit-transition: all .33s cubic-bezier(0.075, 0.82, 0.165, 1);
+   -moz-transition: all .33s cubic-bezier(0.075, 0.82, 0.165, 1);
+   -ms-transition: all .33s cubic-bezier(0.075, 0.82, 0.165, 1);
+   -o-transition: all .33s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .navbar__navigation--link:hover,
 .navbar__navigation--link:focus {
    color: #EBC670;
-   transform: scale(1.5);
-   -webkit-transform: scale(1.5);
-   -moz-transform: scale(1.5);
-   -ms-transform: scale(1.5);
-   -o-transform: scale(1.5);
+   border-bottom: 2px solid #EBC670;
+   transform: scaleXY(1.5, 1.5);
+   -webkit-transform: scaleXY(1.5, 1.5);
+   -moz-transform: scaleXY(1.5, 1.5);
+   -ms-transform: scaleXY(1.5, 1.5);
+   -o-transform: scaleXY(1.5, 1.5);
+}
+
+.navbar__navigation--link:active {
+   color: #f5ae0a;
+   border-bottom: 2px solid #f5ae0a;
+   transform: scale3d(1.5, 1.5, 1.5);
+   -webkit-transform: scale3d(1.5, 1.5, 1.5);
+   -moz-transform: scale3d(1.5, 1.5, 1.5);
+   -ms-transform: scale3d(1.5, 1.5, 1.5);
+   -o-transform: scale3d(1.5, 1.5, 1.5);
 }
