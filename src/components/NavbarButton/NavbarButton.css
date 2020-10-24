@@ -35,3 +35,9 @@
    padding: 2px; */
 
 }
+
+@media (min-width: 769px) {
+   .navbar__button {
+      display: none;
+   }
+}

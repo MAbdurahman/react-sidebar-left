@@ -111,3 +111,9 @@
    -ms-transform: scale3d(1.5, 1.5, 1.5);
    -o-transform: scale3d(1.5, 1.5, 1.5);
 }
+
+@media (max-width: 768px) {
+   .navbar__navigation--container {
+      display: none;
+   }
+}

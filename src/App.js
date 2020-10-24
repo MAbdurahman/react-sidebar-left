@@ -12,28 +12,28 @@ class App extends Component {
 
   sidebarToggleClickHandler = () => {
     this.setState((prevState) => {
-      return {isSidebarOpen: !prevState.isSidebarOpen};
+      return { isSidebarOpen: !prevState.isSidebarOpen };
     });
   };
 
   sidebarClickHandler = () => {
-    this.setState({isSidebarOpen: false});
+    this.setState({ isSidebarOpen: false });
   };
 
 
   render() {
-    let sidebar;
+    
     let background;
 
     if (this.state.isSidebarOpen) {
-      sidebar = <Sidebar />;
-      background = <SidebarBackground click={this.sidebarClickHandler}/>;
+      background = <SidebarBackground click={this.sidebarClickHandler} />;
+      
     }
 
     return (
       <div className="wrapper">
-        <Navbar sidebarClickHandler={this.sidebarToggleClickHandler}/>
-        {sidebar}
+        <Navbar sidebarClickHandler={this.sidebarToggleClickHandler} />
+        <Sidebar isShowing={this.state.isSidebarOpen} />
         {background}
         <main>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, distinctio.</p>
