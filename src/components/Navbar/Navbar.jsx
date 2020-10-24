@@ -8,7 +8,7 @@ const Navbar = props => {
          <header className="navbar">
             <nav className="navbar__navigation">
                <div>
-                  <NavbarButton/>
+                  <NavbarButton click={props.sidebarClickHandler}/>
                </div>
                <div className="navbar__logo">
                   <a href="/">Brand Logo</a>

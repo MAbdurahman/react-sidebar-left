@@ -3,9 +3,8 @@ import './SidebarBackground.css';
 
 const SidebarBackground = props => {
    return (
-      <div className="sidebar__background">
+      <div className="sidebar__background" onClick={props.click}/>
          
-      </div>
    );
 };
 
